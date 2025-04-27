@@ -10,7 +10,7 @@ function generateQRCode() {
     return;
   }
   
-  container.innerHTML = ""; // Clear previous QR
+  container.innerHTML = "";
   
   qr = new QRCode(container, {
     text: text,
@@ -19,7 +19,6 @@ function generateQRCode() {
   });
 
   setTimeout(() => {
-    // Grab the QR code canvas and prepare download link
     let qrCanvas = container.querySelector('canvas');
     if (qrCanvas) {
       downloadLink.href = qrCanvas.toDataURL();
