@@ -6,7 +6,6 @@ A simple web app to create QR codes from text or links.
 
 - Generate QR codes instantly
 - Download QR code as an image
-- Works on desktop and mobile
 
 ## Tech Stack
 
